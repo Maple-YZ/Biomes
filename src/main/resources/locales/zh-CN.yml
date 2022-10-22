@@ -67,7 +67,7 @@ biomes:
       accept:
         name: "&f&l 应用此次更改"
         description: |-
-          &7 将生物群系更改为 &e [生物群系]
+          &7 将生物群系更改为 &e [biome]
 
           &7 更新模式：&e [mode]
           &7 更新范围：&e [number]
@@ -343,7 +343,7 @@ biomes:
           &7 允许设置数量
           &7 秒之间的播放器
           &7 可以再次改变生物群系。
-        value: "&7 当前冷却时间：&e [数字]"
+        value: "&7 当前冷却时间：&e [number]"
         disabled: "&e 冷却被禁用。"
       default_size:
         name: "&f&l 默认范围"
@@ -352,7 +352,7 @@ biomes:
           &7 将在播放器时使用
           &7 改变生物群系
           &7 写它。
-        value: "&7 默认范围：&e [数字]"
+        value: "&7 默认范围：&e [number]"
       default_mode:
         name: "&f&l 默认更新模式"
         description: |-
@@ -431,7 +431,7 @@ biomes:
           [id]
         owner: "&7 所有者：&e [player]"
         title: "&7 岛屿成员："
-        element: " &7 - &e [玩家]"
+        element: " &7 - &e [player]"
       change_biome:
         name: "&f&l 改变生物群系"
         description: "&7 改变每个岛屿的生物群落。"
@@ -453,7 +453,7 @@ biomes:
           &7 仅来自此的生物群系
           &7 捆绑包可用于
           &7岛。
-        value: "&b 捆绑包：[捆绑包]"
+        value: "&b 捆绑包：[bundle]"
         overwritten: |-
           &c 所有者拥有的权限
           &c 覆盖捆绑包。
@@ -466,9 +466,9 @@ biomes:
           &7 捆绑包可用于
           &7岛。
           &7 用户分配的权限：
-          &7&o '[游戏模式].biomes.
+          &7&o '[gamemode].biomes.
           &7&o 捆绑包。<捆绑包 ID>'
-        value: "&b 捆绑包：[捆绑包]"
+        value: "&b 捆绑包：[bundle]"
       reset_to_default:
         name: "&f&l 重置为默认值"
         description: |-
@@ -603,35 +603,35 @@ biomes:
       unknown: "&e 未知"
       biome:
         lore: |-
-          [描述]
-          [生物群落]
-          [开锁]
-          [改变]
-        original: "&7 生物群系：&e [生物群系]"
+          [description]
+          [biome]
+          [unlock]
+          [change]
+        original: "&7 生物群系：&e [biome]"
         unlock:
           lore: |-
-            [项目]
-            [钱]
-            [等级]
-            [权限]
+            [item]
+            [money]
+            [level]
+            [permission]
           money: "&7 解锁费用：&e $[number]"
           level: |-
-            &7 需要到达 &e [数字]
+            &7 需要到达 &e [number]
             &7 岛级。
-          permission-single: "&7 缺少权限：&c [权限]"
+          permission-single: "&7 缺少权限：&c [permission]"
           permissions-title: "&c 缺少权限："
-          permissions-list: "&c - [权限]"
-          item-single: "&7 解锁物品：[颜色] [数量] x [物品]"
+          permissions-list: "&c - [permission]"
+          item-single: "&7 解锁物品：[color] [number] x [item]"
           item-title: "&7 解锁物品："
-          item-list: "&7 - [颜色] [数量] x [项目]"
+          item-list: "&7 - [color] [number] x [item]"
           missing: "＆C"
           has: "&e"
         change:
           lore: |-
-            [项目]
-            [钱]
-            [模式]
-            [用法]
+            [items]
+            [money]
+            [mode]
+            [usage]
           mode:
             per_block: |-
               &b&o 每个生物群系的成本
@@ -640,32 +640,32 @@ biomes:
               &b&o 改变生物群系增加
               &b&o 它的价格。
             static: "&b&o 标准更改价格。"
-          money: "&7 费用：&e $[数字]"
-          item-single: "&7 项目：[颜色] [数量] x [项目]"
+          money: "&7 费用：&e $[number]"
+          item-single: "&7 项目：[color] [number] x [item]"
           item-title: "&7 项："
-          item-list: "&7 - [颜色] [数量] x [项目]"
+          item-list: "&7 - [color] [number] x [item]"
           number-of-usage: |-
             |&7 这个生物群系已经
-            &7 应用了 &e [数字] &r&7 次。
+            &7 应用了 &e [number] &r&7 次。
           missing: "＆C"
           has: "&e"
       bundle:
         lore: |-
-          [描述]
-          [允许]
-          [生物群系]
+          [description]
+          [permission]
+          [biome]
         permission: |-
           &7 必须的权限
           &7 分配给玩家：
-          &7&o [游戏模式].biomes.bundle.[id]
+          &7&o [gamemode].biomes.bundle.[id]
         title: "&7 捆绑生物群系："
-        value: "&7 - [生物群系]"
+        value: "&7 - [biome]"
         no-biomes: "&c 没有指定生物群系"
       library:
-        author: "&7 作者 &e [作者]"
-        version: "&7 使用生物群系 &e [版本]"
+        author: "&7 作者 &e [author]"
+        version: "&7 使用生物群系 &e [version]"
         lang: "&7 语言：&e [lang]"
-        gamemode: "&7 主要用于 &e [游戏模式]"
+        gamemode: "&7 主要用于 &e [gamemode]"
       admin:
         input-mode: 在聊天和铁砧输入模式之间切换。
   conversations:
@@ -679,12 +679,12 @@ biomes:
     input-seconds: "&e 请在聊天中输入秒。"
     numeric-only: "&c 给定的 [value] 不是数字！"
     not-valid-value: "&c 给定的数字 [值] 无效。它必须大于 [min] 并且小于 [max]！"
-    data-removed: "&a 选择的生物群系从 [游戏模式] 中移除。"
+    data-removed: "&a 选择的生物群系从 [gamemode] 中移除。"
     confirm-deletion: "&e 请确认您要删除 [number] 个名称为 [value] 的生物群系。"
-    user-data-removed: "&a [游戏模式] 的所有用户数据都从数据库中清除。"
-    confirm-user-data-deletion: "&e 请确认您要清除 [游戏模式] 的用户数据库。"
-    all-data-removed: "&a [游戏模式] 的所有插件数据都从数据库中清除。"
-    confirm-all-data-deletion: "&e 请确认您要清除 [游戏模式] 的插件数据。"
+    user-data-removed: "&a [gamemode] 的所有用户数据都从数据库中清除。"
+    confirm-user-data-deletion: "&e 请确认您要清除 [gamemode] 的用户数据库。"
+    all-data-removed: "&a [gamemode] 的所有插件数据都从数据库中清除。"
+    confirm-all-data-deletion: "&e 请确认您要清除 [gamemode] 的插件数据。"
     write-name: "&e 请在聊天中写一个名字。"
     new-object-created: "&a 为 [gamemode] 创建了一个新对象。"
     object-already-exists: "&c 对象 &7 [id] &c 已经存在。选择不同的名称。"
@@ -696,38 +696,38 @@ biomes:
     start-downloading: "&a 开始下载和导入 Biomes Library。"
     written-text: "&a 输入文本："
     confirm-data-replacement: "&e 请确认您想用新数据替换当前数据。"
-    new-data-imported: "&a 成功，[游戏模式] 的新数据已导入。"
+    new-data-imported: "&a 成功，[gamemode] 的新数据已导入。"
     exported-file-name: "&e 请输入导出的数据库文件的文件名。 （写“取消”退出）"
-    database-export-completed: "&a 成功，[world] 的数据库导出完成。文件[文件]生成。"
+    database-export-completed: "&a 成功，[world] 的数据库导出完成。文件[file]生成。"
     file-name-exist: "&c 名称为“[id]”的文件存在。无法覆盖。"
     write-search: "&e 请写一个搜索值。 （写“取消”退出）"
     search-updated: "&a 搜索值已更新。"
     invalid-biome: "&c 存储的 `[biome]` 中的某些数据无效。"
-    confirm-biome-deletion: "&e 请确认您要从 [游戏模式] 中移除 [生物群系]。"
-    biome-removed: "[生物群系] &a 从 [游戏模式] 中移除。"
-    confirm-island-data-deletion: "&e 请确认您要删除 [玩家] 岛屿数据。"
-    island-data-removed: "[玩家] & 一个岛屿数据被删除。"
-    confirm-biome-data-deletion: "&e 请确认您要从 [游戏模式] 中移除所有生物群落。"
-    biome-data-removed: 所有生物群系都从 [游戏模式] 中移除。
-    click-text-to-purchase: "&e 你已解锁 &r [生物群系]&r&e！点击这里购买。"
-    click-text-to-set: "&e 你已解锁 &r [生物群系]&r&e！点击这里使用它。"
+    confirm-biome-deletion: "&e 请确认您要从 [gamemode] 中移除 [biome]。"
+    biome-removed: "[biome] &a 从 [gamemode] 中移除。"
+    confirm-island-data-deletion: "&e 请确认您要删除 [player] 岛屿数据。"
+    island-data-removed: "[player] & 一个岛屿数据被删除。"
+    confirm-biome-data-deletion: "&e 请确认您要从 [gamemode] 中移除所有生物群落。"
+    biome-data-removed: 所有生物群系都从 [gamemode] 中移除。
+    click-text-to-purchase: "&e 你已解锁 &r [biome]&r&e！点击这里购买。"
+    click-text-to-set: "&e 你已解锁 &r [biome]&r&e！点击这里使用它。"
   messages:
-    biome-not-unlocked: "[生物群系] &r&c 未解锁。你不能使用它。"
-    biome-not-purchased: "&c 你不能使用 &r [生物群系] &r&c。你需要购买它。"
-    biome-cannot-be-unlocked: "&c 你无法解锁 &r [生物群系] &r&c。"
-    biome-already-purchased: "&c 你已经购买了 &r [生物群系] &r&c。"
-    island-level-not-reached: "[生物群系] &c 要求至少有岛屿等级：[数量]。"
+    biome-not-unlocked: "[biome] &r&c 未解锁。你不能使用它。"
+    biome-not-purchased: "&c 你不能使用 &r [biome] &r&c。你需要购买它。"
+    biome-cannot-be-unlocked: "&c 你无法解锁 &r [biome] &r&c。"
+    biome-already-purchased: "&c 你已经购买了 &r [biome] &r&c。"
+    island-level-not-reached: "[biome] &c 要求至少有岛屿等级：[number]。"
     missing-permission: "[biome] &c 需要有权限：[permission]。"
-    no-credits-buy: "&c 你没有足够的积分来购买 &r [生物群系] &r&c。它花费[数量]。"
-    no-credits-buy-bank: "&c 您的银行账户中没有足够的信用来购买 &r [biome] &r&c。它花费[数量]。"
-    no-items-buy: "&c 你没有足够的物品来购买 &r [生物群系] &r&c。它需要[项目]。"
-    biome-purchased: "&e 你已经购买了 &r [生物群系]。"
+    no-credits-buy: "&c 你没有足够的积分来购买 &r [biome] &r&c。它花费[number]。"
+    no-credits-buy-bank: "&c 您的银行账户中没有足够的信用来购买 &r [biome] &r&c。它花费[number]。"
+    no-items-buy: "&c 你没有足够的物品来购买 &r [biome] &r&c。它需要[item]。"
+    biome-purchased: "&e 你已经购买了 &r [biome]。"
     import-count: 岛屿地形导入结束. 成功导入 [number] 个地形.
     start-downloading: "&e 开始下载库。"
     update-start: "&e地形更新开始..."
     update-done: "&6[biome]&r&e 成功更新"
     waiting: "&a 在队列中添加了生物群落变化。 &e 预计等待时间：[time] 秒。"
-    biome-already-unlocked: "&r [生物群系] &e 已经解锁。"
+    biome-already-unlocked: "&r [biome] &e 已经解锁。"
     everything-already-bought: "&a 你已经为这个游戏模式购买了所有的生物群落。"
     skipping: 跳过[biome] 导入.
     overwriting: 覆盖 [biome].
@@ -735,7 +735,7 @@ biomes:
     migrate-start: "&a 开始迁移到新的数据格式。"
     migrate-finish: "&a 已完成向新数据格式的迁移。"
     migrate-valid: "&a 所有数据均有效。不需要迁移。"
-    bundle-loaded: "&a 捆绑 &r [捆绑] &a 已加载。"
+    bundle-loaded: "&a 捆绑 &r [bundle] &a 已加载。"
   errors:
     no-island-data: "&c Island 没有任何存储数据。"
     no-biomes-admin: "&c该世界不允许使用地形! 你需要使用 &5/[command] &c加入地形!"
@@ -744,7 +744,7 @@ biomes:
     not-enough-level: "&c你的岛屿等级过低，修改该地形需要岛屿等级为 [number]"
     not-enough-money: "&c你没有足够的金钱，修改该地形需要金钱 $[number]"
     not-enough-money-bank: "&c 您的银行账户没有足够的信用。生物群落变化费用 $[number]。"
-    not-enough-items: "&c 这个生物群系改变成本[物品]。"
+    not-enough-items: "&c 这个生物群系改变成本[item]。"
     admin-not-on-island: "&c你不在 [user] 的岛上."
     incorrect-object: "&c无法找到具体给定ID的地形 &d'[biome]'."
     missing-biome: "&c地形未定义"
